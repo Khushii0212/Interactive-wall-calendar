@@ -1,36 +1,161 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎨 Premium Interactive Wall Calendar
 
-## Getting Started
+A visually stunning, production-quality **interactive wall calendar component** built using modern frontend technologies. Designed to combine **aesthetic appeal, smooth interactions, and functional usability** — inspired by real-world product UI standards.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+### 🗓️ Wall Calendar Aesthetic
+
+* Realistic hanging calendar design with **spiral binding effect**
+* Clean split-view layout with **hero image + calendar grid**
+* Carefully crafted visual hierarchy
+
+### 🎨 Dynamic Theme Adaptation
+
+* Automatically extracts dominant colors from the hero image
+* Applies theme dynamically across the UI
+* Creates a cohesive, immersive visual experience
+
+### 📆 Interactive Calendar Grid
+
+* Full month navigation with smooth transitions
+* Highlights:
+
+  * Today
+  * Weekends
+  * Holidays
+* Clean and responsive grid layout
+
+### 🔄 Date Range Selection
+
+* Select start and end dates intuitively
+* Visual feedback for:
+
+  * Start date
+  * End date
+  * Range in between
+* Smooth animated transitions using Framer Motion
+
+### 📝 Integrated Notes System
+
+* Add notes for:
+
+  * Entire month
+  * Selected date range
+* Persistent storage using `localStorage`
+* Visual indicators for dates with notes
+
+### 🌗 Dark / Light Mode
+
+* Seamless theme switching
+* Maintains consistent design system across modes
+
+### 📱 Fully Responsive Design
+
+* Desktop → Split layout (image + calendar)
+* Mobile → Stacked layout with touch-friendly interactions
+* Optimized spacing and usability across devices
+
+---
+
+## 🧰 Tech Stack
+
+* **Framework:** Next.js 14 (App Router)
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS + CSS Variables
+* **Animations:** Framer Motion
+* **Date Handling:** date-fns
+* **Color Extraction:** Canvas API (custom hook)
+* **Icons:** Lucide React
+
+---
+
+## 🧠 Architecture Highlights
+
+* Modular component structure (`Calendar`, `Notes`, `UI`)
+* Custom hooks:
+
+  * `useCalendar`
+  * `useNotes`
+  * `useColorExtract`
+* Clean separation of concerns
+* Scalable folder structure for production-level apps
+
+---
+
+## 🚀 Running Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open:
+👉 http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎥 Demo Video
 
-## Learn More
+👉 https://drive.google.com/file/d/1vVF9jBI_YIANaxeSVWxtWxIdVxF3-vgu/view?usp=sharing
 
-To learn more about Next.js, take a look at the following resources:
+## 🌐 Live Demo
+👉 https://your-project.vercel.app
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📸 Screenshots
 
-## Deploy on Vercel
+### 🌞 Light Mode
+![Light Mode](public/light.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🌙 Dark Mode
+![Dark Mode](public/dark.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 📱 Mobile View
+![Mobile](public/mobile.png)
+
+
+---
+
+## ⚙️ Design & UX Focus
+
+This project emphasizes:
+
+* Micro-interactions and smooth animations
+* Responsive and accessible UI
+* Real-world product design inspiration
+* Clean and maintainable code architecture
+
+---
+
+## ⚠️ Notes & Trade-offs
+
+* **Frontend-only implementation:**
+  No backend or database (as per requirements)
+
+* **Data persistence:**
+  Uses browser `localStorage`
+
+* **Image Handling:**
+  Unsplash images with Canvas-based color extraction
+  (`Cross-Origin-Opener-Policy` enabled)
+
+---
+
+## 💡 Future Improvements
+
+* Drag & drop events
+* Calendar syncing (Google Calendar)
+* Multi-user collaboration
+* Offline support (PWA)
+
+---
+
+## 🙌 Author
+
+Built with a focus on **modern frontend engineering, UI/UX excellence, and real-world scalability**.
+
+---
