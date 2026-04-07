@@ -62,8 +62,9 @@ A visually stunning, production-quality **interactive wall calendar component** 
 
 ## 🧰 Tech Stack
 
-* **Framework:** Next.js 14 (App Router)
-* **Language:** TypeScript
+* **Build Tool:** Vite
+* **Framework:** React
+* **Language:** JavaScript (ES6+)
 * **Styling:** Tailwind CSS + CSS Variables
 * **Animations:** Framer Motion
 * **Date Handling:** date-fns
@@ -93,13 +94,13 @@ npm run dev
 ```
 
 Then open:
-👉 http://localhost:3000
+👉 http://localhost:5173
 
 ---
 
 ## 🎥 Demo Video
 
-👉 https://drive.google.com/file/d/1vVF9jBI_YIANaxeSVWxtWxIdVxF3-vgu/view?usp=sharing
+👉 https://drive.google.com/file/d/1XSYspmTfDl2EY1CbyT4jeSiAmYFjZFzy/view?usp=sharing
 
 ## 🌐 Live Demo
 👉 https://interactive-wall-calendar-chi.vercel.app
